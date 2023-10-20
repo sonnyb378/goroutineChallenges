@@ -38,7 +38,7 @@ func SumAllElements(input []int) (string, error) {
 		}
 
 		wg.Add(1)
-		go SumAll(&wg, partialSum, input[start:end])
+		go ComputePartialSum(&wg, partialSum, input[start:end])
 	}
 
 	go func() {
@@ -57,7 +57,7 @@ func SumAllElements(input []int) (string, error) {
 	return fmt.Sprintf("Sum: %v\n", allSum), nil
 }
 
-func SumAll(wg *sync.WaitGroup, ps chan int, input []int) {
+func ComputePartialSum(wg *sync.WaitGroup, ps chan int, input []int) {
 
 	defer wg.Done()
 
