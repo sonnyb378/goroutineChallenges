@@ -1,0 +1,23 @@
+
+Challenge 1: Parallel Image Processing
+Create a Go program that reads a directory of images, applies a filter 
+(e.g., grayscale conversion or blur) to each image concurrently, and saves 
+the processed images.
+
+Input:
+A directory containing image files (e.g., JPEG or PNG).
+
+Desired Output:
+The same directory with processed images.
+
+Challenge 2: Concurrent Word Count
+Write a Go program that reads multiple text files concurrently, counts the number of 
+words in each file, and reports the results.
+
+Input:
+Three text files with content.
+
+Desired Output:
+File 1: 100 words
+File 2: 85 words
+File 3: 120 words

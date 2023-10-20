@@ -1,0 +1,21 @@
+
+Challenge 1: Simple Parallel Summation
+Write a Go program that calculates the sum of all elements in a large array 
+concurrently using goroutines.
+
+Input:
+data := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+Desired Output:
+Sum: 55
+
+
+Challenge 2: Concurrent Factorial Calculator
+Write a Go program that calculates the factorial of a given number using a 
+separate goroutine for the calculation.
+
+Input:
+n := 5
+
+Desired Output:
+Factorial of 5 is 120
