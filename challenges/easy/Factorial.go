@@ -1,10 +1,10 @@
 package easy
 
 import (
-	"fmt"
+	"sync"
 )
 
-func Factorial(input int) string {
+func Factorial(input int) int {
 
 	// Challenge 2: Concurrent Factorial Calculator
 	// Write a Go program that calculates the factorial of a given number using a
@@ -16,8 +16,31 @@ func Factorial(input int) string {
 	// Desired Output:
 	// Factorial of 5 is 120
 
-	var factorial int
+	wg := sync.WaitGroup{}
 
-	return fmt.Sprintf("Factorial of %v is %v\n", input, factorial)
+	resultChan := make(chan int)
 
+	wg.Add(1)
+	go ComputeFactorial(input, &wg, resultChan)
+
+	go func() {
+		wg.Wait()
+		close(resultChan)
+	}()
+
+	return <-resultChan
+
+}
+
+func ComputeFactorial(n int, wg *sync.WaitGroup, resultChan chan int) {
+	fSum := 1
+	defer wg.Done()
+	if n <= 0 {
+		resultChan <- 1
+	}
+
+	for i := n; i >= 1; i-- {
+		fSum *= i
+	}
+	resultChan <- fSum
 }
