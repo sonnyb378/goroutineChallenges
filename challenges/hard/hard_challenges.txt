@@ -1,14 +1,19 @@
 
-Challenge 1: Distributed File Search
-Create a Go program that searches for a specific keyword in a large directory 
-of text files concurrently. Implement multiple worker goroutines to speed up 
-the search process.
+Challenge 1: Concurrent Sudoku Solver
+
+Create a Go program that solves Sudoku puzzles concurrently. 
+The program should be able to take Sudoku boards of varying 
+difficulty levels and use goroutines to attempt to solve them. 
+The Sudoku puzzle should be represented as a 9x9 grid, with 
+some cells filled, and the program should find the solution by
+concurrently trying different possibilities.
 
 Input:
-A directory with text files and a target keyword.
+A Sudoku puzzle board (9x9 grid) with some cells filled.
 
 Desired Output:
-A list of files where the keyword was found.
+The program should find and print the solved Sudoku board.
+
 
 Challenge 2: Parallel Matrix Multiplication
 Write a Go program that multiplies two large matrices concurrently using goroutines. 
