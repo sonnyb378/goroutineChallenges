@@ -11,3 +11,4 @@ During this project, I've gained valuable insights into concurrent programming i
 - Synchronizing Goroutines using WaitGroups for orderly execution.
 - Protecting shared resources with Mutexes to avoid data races.
 - Understanding deadlock errors
+- How to read .txt files in Go
