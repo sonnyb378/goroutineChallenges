@@ -1,5 +1,18 @@
 
-Challenge 1: Concurrent Sudoku Solver
+Challenge 1: Parallel Matrix Multiplication
+Write a Go program that multiplies two large matrices concurrently using goroutines. 
+The program should efficiently distribute the work among multiple goroutines to speed 
+up the computation.
+
+Input:
+Two matrices to be multiplied.
+
+Desired Output:
+The resulting product matrix.
+
+
+
+Challenge 2: Concurrent Sudoku Solver
 
 Create a Go program that solves Sudoku puzzles concurrently. 
 The program should be able to take Sudoku boards of varying 
@@ -15,13 +28,3 @@ Desired Output:
 The program should find and print the solved Sudoku board.
 
 
-Challenge 2: Parallel Matrix Multiplication
-Write a Go program that multiplies two large matrices concurrently using goroutines. 
-The program should efficiently distribute the work among multiple goroutines to speed 
-up the computation.
-
-Input:
-Two matrices to be multiplied.
-
-Desired Output:
-The resulting product matrix.

@@ -4,7 +4,8 @@ import (
 	"fmt"
 
 	// "github.com/sonnyb378/goroutineChallenges/challenges/easy"
-	"github.com/sonnyb378/goroutineChallenges/challenges/intermediate"
+	// "github.com/sonnyb378/goroutineChallenges/challenges/intermediate"
+	"github.com/sonnyb378/goroutineChallenges/challenges/hard"
 )
 
 func main() {
@@ -44,16 +45,22 @@ func main() {
 	// fmt.Println("=========================================")
 	// fmt.Println("")
 
-	fmt.Println("Challenge 4: Concurrent Word Count")
-	path := "challenges/intermediate/documents"
-	result, err := intermediate.WordCountInFile(path)
-	if err != nil {
-		fmt.Println("Error: ", err)
-		return
-	}
-	for _, v := range result {
-		fmt.Println(v)
-	}
-	fmt.Println("=========================================")
-	fmt.Println("")
+	// fmt.Println("Challenge 4: Concurrent Word Count")
+	// path := "challenges/intermediate/documents"
+	// result, err := intermediate.WordCountInFile(path)
+	// if err != nil {
+	// 	fmt.Println("Error: ", err)
+	// 	return
+	// }
+	// for _, v := range result {
+	// 	fmt.Println(v)
+	// }
+	// fmt.Println("=========================================")
+	// fmt.Println("")
+
+	// HARD
+	fmt.Println("Challenge 5: Parallel Matrix Multiplication")
+	result := hard.MatrixMultiplication(3, 3)
+	fmt.Println("Final Product Matrix: ", result)
+
 }
