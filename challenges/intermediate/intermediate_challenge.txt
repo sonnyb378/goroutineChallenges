@@ -1,5 +1,5 @@
 
-Challenge 1: Concurrent Prime Number Finder
+Challenge 3: Concurrent Prime Number Finder
 Write a Go program that finds and prints all prime numbers in a given range concurrently. 
 The program should accept a range of numbers, divide the range into segments, and use 
 goroutines to check for prime numbers within each segment. 
@@ -13,7 +13,7 @@ Prime numbers in the range 1-100:
 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 73 79 83 89 97
 
 
-Challenge 2: Concurrent Word Count
+Challenge 4: Concurrent Word Count
 Write a Go program that reads multiple text files concurrently, counts the number of 
 words in each file, and reports the results.
 

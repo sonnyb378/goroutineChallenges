@@ -9,7 +9,7 @@ import (
 
 func MatrixMultiplication(rows int, cols int) [][]int {
 
-	// Challenge 1: Parallel Matrix Multiplication
+	// Challenge 5: Parallel Matrix Multiplication
 	// Write a Go program that multiplies two large matrices concurrently using goroutines.
 	// The program should efficiently distribute the work among multiple goroutines to speed
 	// up the computation.

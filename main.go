@@ -59,8 +59,11 @@ func main() {
 	// fmt.Println("")
 
 	// HARD
-	fmt.Println("Challenge 5: Parallel Matrix Multiplication")
-	result := hard.MatrixMultiplication(3, 3)
-	fmt.Println("Final Product Matrix: ", result)
+	// fmt.Println("Challenge 5: Parallel Matrix Multiplication")
+	// result := hard.MatrixMultiplication(3, 3)
+	// fmt.Println("Final Product Matrix: ", result)
+
+	fmt.Println("Challenge 6: Concurrent Sudoku Solver")
+	hard.Sudoku()
 
 }
