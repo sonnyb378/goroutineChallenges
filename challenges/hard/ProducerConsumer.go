@@ -1,7 +1,7 @@
 package hard
 
 func ProducerConsumer() {
-	// Challenge: Producer-Consumer Problem with Mutex
+	// Challenge 9: Producer-Consumer Problem with Mutex
 	// Input: Number of items to produce and consume: 10
 
 	// Desired Correct Output:

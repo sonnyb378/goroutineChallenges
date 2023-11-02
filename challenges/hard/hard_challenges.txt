@@ -28,7 +28,7 @@ Desired Output:
 The program should find and print the solved Sudoku board.
 
 
-Challenge: Producer-Consumer Problem with Mutex
+Challenge 9: Producer-Consumer Problem with Mutex
 Input: Number of items to produce and consume: 10
 
 Desired Correct Output:

@@ -7,7 +7,7 @@ import (
 
 func Counter(numberOfGoroutines int, processTimes int) {
 
-	// Challenge: Implement a concurrent counter using a Mutex.
+	// Challenge 7: Implement a concurrent counter using a Mutex.
 	// Description: Write a Go program that creates multiple goroutines to increment a shared counter concurrently using a Mutex.
 	// The program should increment the counter a specified number of times and ensure that the counter is protected from data races using a Mutex.
 	// At the end of the program, print the final value of the counter.
@@ -23,7 +23,7 @@ func Counter(numberOfGoroutines int, processTimes int) {
 	// Counter Value: 9900 (due to data races)
 
 	var counter int
-	wg := &sync.WaitGroup{}
+	wg := sync.WaitGroup{}
 	m := sync.Mutex{}
 
 	for i := 0; i < numberOfGoroutines; i++ {

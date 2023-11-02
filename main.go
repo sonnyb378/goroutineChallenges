@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/sonnyb378/goroutineChallenges/challenges/easy"
-	// "github.com/sonnyb378/goroutineChallenges/challenges/intermediate"
+	// "github.com/sonnyb378/goroutineChallenges/challenges/easy"
+	"github.com/sonnyb378/goroutineChallenges/challenges/intermediate"
 	// "github.com/sonnyb378/goroutineChallenges/challenges/hard"
 )
 
@@ -26,8 +26,8 @@ func main() {
 	// fmt.Println("=========================================")
 	// fmt.Println("")
 
-	fmt.Println("Challenge: Concurrent Counter")
-	easy.Counter(10, 1000)
+	// fmt.Println("Challenge: Concurrent Counter")
+	// easy.Counter(10, 1000)
 
 	// INTERMEDIATE
 	// fmt.Println("Challenge 3: Concurrent Prime Number Finder")
@@ -60,6 +60,9 @@ func main() {
 	// }
 	// fmt.Println("=========================================")
 	// fmt.Println("")
+
+	fmt.Println("Challenge 8: Bank Transactions")
+	intermediate.BankTransactions(5000.00, 100, 1000)
 
 	// HARD
 	// fmt.Println("Challenge 5: Parallel Matrix Multiplication")
