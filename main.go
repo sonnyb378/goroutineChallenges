@@ -3,9 +3,9 @@ package main
 import (
 	"fmt"
 
-	// "github.com/sonnyb378/goroutineChallenges/challenges/easy"
+	"github.com/sonnyb378/goroutineChallenges/challenges/easy"
 	// "github.com/sonnyb378/goroutineChallenges/challenges/intermediate"
-	"github.com/sonnyb378/goroutineChallenges/challenges/hard"
+	// "github.com/sonnyb378/goroutineChallenges/challenges/hard"
 )
 
 func main() {
@@ -25,6 +25,9 @@ func main() {
 	// fmt.Printf("Factorial of %v is %v\n", num, factorial)
 	// fmt.Println("=========================================")
 	// fmt.Println("")
+
+	fmt.Println("Challenge: Concurrent Counter")
+	easy.Counter(10, 1000)
 
 	// INTERMEDIATE
 	// fmt.Println("Challenge 3: Concurrent Prime Number Finder")
@@ -63,7 +66,7 @@ func main() {
 	// result := hard.MatrixMultiplication(3, 3)
 	// fmt.Println("Final Product Matrix: ", result)
 
-	fmt.Println("Challenge 6: Concurrent Sudoku Solver")
-	hard.Sudoku()
+	// fmt.Println("Challenge 6: Concurrent Sudoku Solver")
+	// hard.Sudoku()
 
 }

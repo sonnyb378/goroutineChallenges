@@ -19,3 +19,17 @@ n := 5
 
 Desired Output:
 Factorial of 5 is 120
+
+
+Challenge: Implement a concurrent counter using a Mutex.
+Description: Write a Go program that creates multiple goroutines to increment a shared counter concurrently using a Mutex. The program should increment the counter a specified number of times and ensure that the counter is protected from data races using a Mutex. At the end of the program, print the final value of the counter.
+
+Input: Number of goroutines and the number of times each goroutine should increment the counter.
+
+Desired Output: The final value of the counter after all goroutines have finished.
+
+Correct Output:
+Counter Value: 10000
+
+Wrong Output:
+Counter Value: 9900 (due to data races)
