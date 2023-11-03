@@ -4,8 +4,8 @@ import (
 	"fmt"
 
 	// "github.com/sonnyb378/goroutineChallenges/challenges/easy"
-	"github.com/sonnyb378/goroutineChallenges/challenges/intermediate"
-	// "github.com/sonnyb378/goroutineChallenges/challenges/hard"
+	// "github.com/sonnyb378/goroutineChallenges/challenges/intermediate"
+	"github.com/sonnyb378/goroutineChallenges/challenges/hard"
 )
 
 func main() {
@@ -61,8 +61,8 @@ func main() {
 	// fmt.Println("=========================================")
 	// fmt.Println("")
 
-	fmt.Println("Challenge 8: Bank Transactions")
-	intermediate.BankTransactions(5000.00, 100, 1000)
+	// fmt.Println("Challenge 8: Bank Transactions")
+	// intermediate.BankTransactions(5000.00, 100, 1000)
 
 	// HARD
 	// fmt.Println("Challenge 5: Parallel Matrix Multiplication")
@@ -72,4 +72,6 @@ func main() {
 	// fmt.Println("Challenge 6: Concurrent Sudoku Solver")
 	// hard.Sudoku()
 
+	fmt.Println("Challenge 9: Producer-Consumer")
+	hard.ProducerConsumer(10)
 }

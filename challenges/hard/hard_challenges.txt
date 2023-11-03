@@ -28,42 +28,27 @@ Desired Output:
 The program should find and print the solved Sudoku board.
 
 
-Challenge 9: Producer-Consumer Problem with Mutex
-Input: Number of items to produce and consume: 10
 
-Desired Correct Output:
+Challenge 9: Implement the Producer-Consumer problem using Mutex.
+Description: Implement the classic Producer-Consumer problem using goroutines and a Mutex.
+The program should have a producer that produces items and a consumer that consumes them.
+Use a shared buffer protected by a Mutex to ensure that the producer and consumer can work concurrently without data races.
+
+Input: Number of items to produce and consume.
+
+Desired Output: The program should print the items produced and consumed, and it should demonstrate that the producer and
+consumer are working correctly without any conflicts.
+
+Correct Output:
 Produced: Item 1
 Consumed: Item 1
 Produced: Item 2
 Consumed: Item 2
-Produced: Item 3
-Consumed: Item 3
-Produced: Item 4
-Consumed: Item 4
-Produced: Item 5
-Consumed: Item 5
-Produced: Item 6
-Consumed: Item 6
-Produced: Item 7
-Consumed: Item 7
-Produced: Item 8
-Consumed: Item 8
-Produced: Item 9
-Consumed: Item 9
-Produced: Item 10
-Consumed: Item 10
-
-Wrong Output (due to data races or incorrect synchronization):
-Produced: Item 1
-Consumed: Item 1
-Produced: Item 2
-Produced: Item 3
-Consumed: Item 2
-Produced: Item 4
-Consumed: Item 3
-Consumed: Item 4
-Produced: Item 5
-Consumed: Item 5
 ...
 
+Wrong Output:
+Produced: Item 1
+Produced: Item 2
+Consumed: Item 1 (due to data races)
+Consumed: Item 2 (due to data races)
 
